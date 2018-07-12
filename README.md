@@ -1,7 +1,7 @@
 # Custom Spark Version(s)
 
-Remove the limit on bucket counts with the [included patch](0001-Remove-bucket-count-limit.patch), built it with:
+Allow to adjust the limit on bucket counts with the [included patch](0001-Configurable-bucket-count-limit.patch) against v2.3.2-rc2. Built it with:
 
-    ./dev/make-distribution.sh --name master-spark --pip --tgz -Phadoop-2.7 -Phive -Phive-thriftserver
+    ./dev/make-distribution.sh --name rc2-patched --pip --tgz -Phadoop-2.7 -Phive -Phive-thriftserver
 
-For Spark 2.3.0, see apache/spark#21087.
+See also [apache/spark#21087](https://github.com/apache/spark/pull/21087).
